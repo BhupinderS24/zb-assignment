@@ -1,0 +1,32 @@
+<br />
+
+<div style="width: 254px; height: 129px" class="big-outer-box">
+  <div style="width: 30px" class="border-box-top"></div>
+
+  <div style="width: 30px" class="border-box-bottom"></div>
+  <div
+    style="
+      width: 250px;
+      height: 128px;
+      top: 1px;
+      border-color: #3dc18d;
+      background: #f8f8f8;
+      position: relative;
+    "
+    class="big-box"
+  >
+    <div
+      style="
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+      "
+      class="inner-content"
+    >
+      <ng-content select=".bottom-heading"></ng-content>
+
+      <ng-content select=".content"></ng-content>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,109 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "~ngx-toastr/toastr";
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+table.mat-table {
+  border-spacing: 0;
+  width: 100%;
+}
+
+.mat-toolbar-row,
+.mat-toolbar-single-row {
+  height: 36px !important;
+}
+
+.custom-container {
+  position: relative;
+  display: inline-block;
+}
+
+.outer-most-box {
+  z-index: 2;
+  position: absolute;
+}
+
+.outer-box {
+  position: relative;
+  top: 2px;
+  bottom: 2px;
+  left: 2px;
+  right: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  clip-path: polygon(
+    20% 0%,
+    100% 0,
+    100% 20%,
+    100% 80%,
+    80% 100%,
+    20% 100%,
+    1% 100%,
+    0% 20%
+  );
+}
+
+.box {
+  position: relative;
+  clip-path: polygon(
+    20% 0%,
+    100% 0,
+    100% 20%,
+    100% 80%,
+    80% 100%,
+    20% 100%,
+    1% 100%,
+    0% 20%
+  );
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-box {
+  position: absolute;
+  right: 0px;
+  border-right: 4px solid;
+  border-top: 4px solid;
+}
+
+.left-box {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  border-left: 4px solid;
+  border-bottom: 4px solid;
+}
+
+.big-outer-box {
+  position: relative;
+  z-index: -1;
+  border-radius: 10px;
+  background: white;
+}
+
+.border-box-top {
+  border-top: 4px solid #3dc18d;
+  z-index: 100;
+  position: absolute;
+  left: 20px;
+}
+
+.border-box-bottom {
+  border-bottom: 4px solid #3dc18d;
+  z-index: 100;
+  position: absolute;
+  bottom: -1px;
+  right: 30px;
+}

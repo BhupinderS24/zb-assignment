@@ -1,0 +1,10 @@
+<div [ngStyle]="styleObj.outerMost" class="outer-most-box">
+  <div [ngStyle]="styleObj.rightBox" class="right-box"></div>
+  <div [ngStyle]="styleObj.leftBox" class="left-box"></div>
+
+  <div [ngStyle]="styleObj.outerBox" class="outer-box">
+    <div [ngStyle]="styleObj.box" class="box">
+      <ng-content select=".top-heading"></ng-content>
+    </div>
+  </div>
+</div>

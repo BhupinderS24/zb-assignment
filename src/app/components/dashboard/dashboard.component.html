@@ -1,0 +1,20 @@
+<div class="wrapper">
+  <div *ngFor="let obj of greenBoxArr" class="small-box">
+    <div style="height: 150px; width: 250px" class="custom-container">
+      <app-polygon-shape [styleObj]="obj.styleObj">
+        <h4 class="top-heading">{{ obj.topHeading }}</h4>
+      </app-polygon-shape>
+
+      <app-small-box-component [topHeading]="obj.topHeading">
+        <h4 class="bottom-heading">{{ obj.bottomHeading }}</h4>
+        <p class="content" style="font-size: 12px; text-align: center">
+          {{ obj.content }}
+        </p>
+      </app-small-box-component>
+    </div>
+  </div>
+
+  <div class="big-box">
+    <app-big-box-component [topHeading]="'sonia'"></app-big-box-component>
+  </div>
+</div>
